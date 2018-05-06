@@ -44,7 +44,8 @@ public class TestsSinoptik extends BaseTestClass {
     }
 
     @Test
-    public void testIsTabOpenedCorrectly(){String currentDay = sinoptikMainPage
+    public void testIsTabOpenedCorrectly(){
+        String currentDay = sinoptikMainPage
                 .selectDayOfWeek(FRIDAY)
                 .getDayNameDisplayed();
         assertEquals(FRIDAY.getName(), currentDay);
