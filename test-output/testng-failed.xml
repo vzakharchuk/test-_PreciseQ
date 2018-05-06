@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [TestSinoptik]">
+  <listeners>
+    <listener class-name="base.TestNGListenerImpl"/>
+  </listeners>
+  <test name="TestSinoptik(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="TestsSinoptik">
+        <methods>
+          <include name="setup"/>
+          <include name="afterClass"/>
+          <include name="testIsTabOpenedCorrectly"/>
+          <include name="beforeMethod"/>
+          <include name="testIsAirPressureNormal" invocation-numbers="3 4"/>
+        </methods>
+      </class> <!-- TestsSinoptik -->
+    </classes>
+  </test> <!-- TestSinoptik(failed) -->
+</suite> <!-- Failed suite [TestSinoptik] -->
